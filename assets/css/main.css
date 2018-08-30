@@ -1,0 +1,531 @@
+* {
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+body{
+  background: #06142A;
+  font-family: avenir;
+}
+
+/*HOME PAGE*/
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.menu ul li {
+  width: 20%;
+}
+
+.menu ul li > ul {
+  display: none;
+  flex-direction: column;
+}
+.menu ul li > ul li {
+  width: 100%;
+}
+.menu ul li:hover > ul {
+  display: flex;
+}
+.menu a {
+  display: block;
+  background: #06142A;
+  padding: 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: 100;
+  transition: all 0.5s;
+}
+.menu a:hover {
+  background: #41599C;
+  color: #92272F;
+  font-weight: bolder;
+  transition: all 0.5s;
+}
+.menu .sub-menu li > a {
+  background: #0D1D4A;
+  color: #BAB8B8;
+  filter: opacity(90%);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #9DB1EA;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.menu li ul{
+  position: absolute;
+}
+
+.height{
+  height: 1400px;
+}
+
+main{
+  background: #D8D8D8;
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer{
+  background: #06142A;
+  padding-top: 30px;
+  /* padding-left: 50px; */
+  max-height: 125px;
+  display: flex;
+  flex-direction: row;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  transition: all 0.5s;
+}
+
+.head{
+  padding: 30px;
+  padding-top: 50px;
+  margin-left: 30px;
+  font-weight: light;
+  font-size: 30px;
+  transition: all 0.5s;
+}
+
+.home_title{
+  font-size: 80px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: underline;
+  margin: 20px;
+  padding: 30px;
+}
+
+.home_subtitle{
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  color: #92272F;
+  margin: 30px;
+}
+
+.home_subtext{
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  color: #515050;
+  margin: 20px;
+}
+
+.home_text{
+  font-size: 35px;
+  font-weight: lighter;
+  text-align: center;
+  margin: 30px;
+}
+
+.bullet:hover{
+  font-weight: bold;
+  color: white;
+  transition: all 0.5s;
+}
+
+.logo{
+  max-width: 44%;
+  display: flex;
+}
+
+.social{
+  flex-direction: row;
+  margin-right: 30px;
+}
+
+.social_group{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin-left: 53%;
+}
+
+.social:hover{
+  filter: invert(60%);
+  transition: all 0.5s;
+}
+
+.copyright{
+  color: white;
+  font-family: avenir;
+  font-weight: bolder;
+  text-align: left;
+  margin-left: 3%;
+  margin-top: 1%;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.home_image{
+  border-style: solid;
+  border-width: 7px;
+  border-color: black;
+  width: 60%;
+  height: 40%;
+  margin-left: 20%;
+  display: flex;
+  box-shadow: 0 0 30px #333;
+}
+
+/*TEAM PAGE*/
+
+.team_main{
+  display: flex;
+}
+
+.team_column{
+  display: flex;
+  flex: 50%
+}
+
+.team_title{
+  color: #92272F;
+  font-size: 105px;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #651E24;
+  display: flex;
+  margin-left: 3%;
+}
+
+.team_title:hover{
+  transform: skew(-20deg);
+  color: #65080F;
+  transition: all 0.5s;
+}
+
+hr{
+  background-color: #41599C;
+  height: 8px;
+  border: 0px;
+  width: 95%;
+  display: flex;
+  box-shadow: 0 0 50px #113;
+}
+
+.team_text{
+  margin: 3%;
+  padding: 20px;
+  box-shadow: 0 0 10px #113;
+  background-color: #A7A4A4;
+  flex-direction: column;
+}
+
+.team_subtitle{
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.team_texts{
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+.team_image{
+  display: flex;
+  border-style: solid;
+  border-width: 7px;
+  border-color: black;
+  margin: 3%;
+  width: 50%;
+  background-image: url('../img/tobias_lederberg.jpg');
+  background-size: cover;
+}
+
+/* ABOUT PAGE*/
+
+.about_main{
+  display: flex;
+}
+
+.about_main_height{
+  height: 750px;
+}
+
+.about_height{
+  height: 750px;
+}
+
+.about_height2{
+  height: 2400px;
+}
+
+.about_column{
+  display: flex;
+  flex: 33%;
+  flex-direction: column;
+}
+
+.about_text{
+  font-size: 28px;
+  font-weight: lighter;
+  padding: 20px;
+}
+
+.think_text{
+  font-size: 28px;
+  font-weight: lighter;
+  padding: 20px;
+  column-count: 2;
+}
+
+.about_subtitle{
+font-size: 50px;
+font-weight: bold;
+margin-bottom: 3%;
+}
+
+.about_image{
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 7px;
+  border-color: black;
+  margin: 3%
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+/* SERVICES */
+
+.service_section{
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.service_height{
+  height: 950px;
+}
+
+.represent_height{
+  height: 1300px;
+}
+
+.practice_height{
+  height: 950px;
+}
+
+.business{
+  background-color: #A5A3A2;
+  display: block;
+}
+
+.business:hover{
+background-color: #2D2D2B;
+}
+
+.criminal{
+  background-color: #797777;
+  display: block;
+}
+
+.criminal:hover{
+background-color: #181817;
+}
+
+.employment{
+  background-color: #C3C3C3;
+  display: block;
+}
+
+.employment:hover{
+  background-color: #AAA7A7;
+}
+
+
+/*CONTACT US*/
+
+.contact_texts{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.contact_subtext{
+  font-size: 30px;
+  font-weight: lighter;
+  margin-bottom: 3%;
+  margin-top: 5%;
+}
+
+.bold_text{
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.contact_text{
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.contact_column{
+  display: flex;
+  flex: 0 0 33%
+}
+
+.contact_height{
+  height: 700px;
+}
+
+.bolder_text{
+  font-size: 90px;
+  font-weight: 900;
+  font-style: italic;
+  color: #2D2D2B;
+  text-decoration: underline;
+}
+
+.bolder_text:hover{
+  color: white;
+  transition: all 0.5s;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 10px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #A5A5A5;
+    padding: 20px;
+    color: white;
+}
+
+.contact_table{
+  width: 60%;
+  padding: 3%;
+  margin-left: 20%;
+  background: #A5A5A5;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 30px #333;
+}
+
+/*MOBILE VERSION*/
+
+@media (max-width: 475px) {
+
+  .menu a{
+    font-size: 10px;
+  }
+
+  .home_title{
+    font-size: 50px;
+  }
+
+  .home_subtitle{
+    font-size: 30px;
+  }
+
+  .home_text{
+    font-size: 15px;
+  }
+
+  .home_subtext{
+    font-size: 20px;
+
+  }
+
+  .copyright{
+    font-size: 10px;
+  }
+
+  .social{
+    height: 30%;
+    margin-right: 0%;
+    margin-left: 10%;
+  }
+
+  .height{
+    height: 1100px;
+  }
+
+  .team_title{
+    font-size: 70px;
+  }
+
+  .team_subtitle{
+    font-size: 35px;
+  }
+
+  .team_texts{
+    font-size: 17px;
+  }
+
+  .team_image{
+    display: none;
+  }
+
+  .about_subtitle{
+    font-size: 35px;
+  }
+
+  .think_text{
+    font-size: 15px;
+  }
+
+  .about_text{
+    font-size: 15px;
+  }
+
+  .bold_text{
+    font-size: 35px;
+  }
+
+  .service_section{
+    font-size: 50px;
+  }
+
+  .service_height{
+    height: 500px;
+  }
+
+}
